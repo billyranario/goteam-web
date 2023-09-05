@@ -4,7 +4,10 @@ export const useModal = defineStore('modal', {
   }),
 
   getters: {
-    isOpen: (state: any) => (modalName: string): boolean => state.openModal === modalName,
+    isOpen:
+      (state: any) =>
+      (modalName: string): boolean =>
+        state.openModal === modalName,
   },
 
   actions: {
@@ -17,4 +20,3 @@ export const useModal = defineStore('modal', {
     },
   },
 });
-

@@ -239,9 +239,7 @@ const state = reactive({
     id: null,
     title: '',
     description: '',
-    dueDate: new Date(
-      dueDate.getTime() - dueDate.getTimezoneOffset() * 60000,
-    )
+    dueDate: new Date(dueDate.getTime() - dueDate.getTimezoneOffset() * 60000)
       .toISOString()
       .split('T')[0],
     status: 0,

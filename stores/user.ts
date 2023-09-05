@@ -32,6 +32,6 @@ export const useUser = defineStore('userStore', {
       } finally {
         this.authenticated = false;
       }
-    }
+    },
   },
 });

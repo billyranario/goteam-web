@@ -2,4 +2,134 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-// your additional SCSS code
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;600;700&display=swap');
+
+$primary-color: #1d4ed8;
+$gray-700: #535a78;
+
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+span,
+div,
+input,
+button,
+textarea,
+select,
+option,
+label,
+ul,
+li,
+form,
+table,
+td,
+th,
+tr,
+thead,
+tbody,
+tfoot,
+img,
+figure,
+figcaption,
+nav,
+footer,
+header,
+section,
+article,
+aside,
+main,
+video,
+audio,
+canvas,
+svg,
+iframe,
+code,
+pre,
+samp,
+small,
+strong,
+sub,
+sup,
+mark,
+dl,
+dt,
+dd,
+ol,
+fieldset,
+legend,
+caption,
+hr,
+button,
+input[type='submit'],
+input[type='reset'],
+input[type='button'] {
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: #f9fafc;
+}
+
+input,
+p,
+span,
+.text-sm {
+  font-size: 13px;
+}
+
+.scroll-area {
+  height: calc(100vh - 55px);
+  position: relative;
+}
+
+.brand {
+  height: 55px;
+}
+.text-primary,
+.hover-text-primary:hover {
+  color: $primary-color;
+}
+
+.profile-page--nav {
+  a {
+    &.active,
+    &:hover {
+      li {
+        color: $primary-color;
+        background-color: #f3f4f7;
+        > .ml-auto {
+          i {
+            color: $primary-color;
+          }
+        }
+      }
+    }
+    li {
+      color: $gray-700;
+      font-size: 13px;
+      > i {
+        font-size: 16px;
+      }
+      > .ml-auto {
+        i {
+          color: #9ca0b1;
+          font-size: 11px;
+        }
+      }
+    }
+  }
+}
+.profile-page--container {
+}
+
+@for $i from 1 through 100 {
+  .font-#{$i}px {
+    font-size: #{$i}px;
+  }
+}

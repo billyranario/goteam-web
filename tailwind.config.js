@@ -24,11 +24,14 @@ module.exports = {
           900: '#1e3a8a',
           950: '#172554',
         },
+        fontSizes: {
+          'sm': '12px',
+        }
       },
     },
     fontFamily: {
       body: [
-        'Lato',
+        'Inter',
         'ui-sans-serif',
         'system-ui',
         '-apple-system',
@@ -45,7 +48,7 @@ module.exports = {
         'Noto Color Emoji',
       ],
       sans: [
-        'Lato',
+        'Inter',
         'ui-sans-serif',
         'system-ui',
         '-apple-system',

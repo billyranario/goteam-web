@@ -3,10 +3,7 @@ export default defineNuxtConfig({
   imports: {
     dirs: ['composables/**', 'utils/**'],
   },
-  css: [
-    '~/assets/scss/main.scss',
-    '@fortawesome/fontawesome-free/css/all.css',
-  ],
+  css: ['~/assets/scss/main.scss', '@fortawesome/fontawesome-free/css/all.css'],
   devtools: { enabled: true },
   modules: [
     [

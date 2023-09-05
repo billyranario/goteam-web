@@ -1,6 +1,8 @@
 <template>
   <button :type="type" :disabled="loading" :class="classes">
-    <span v-if="loading" class="mr-2"><i class="fas fa-spinner fa-spin"></i></span>
+    <span v-if="loading" class="mr-2"
+      ><i class="fas fa-spinner fa-spin"></i
+    ></span>
     <slot></slot>
   </button>
 </template>
